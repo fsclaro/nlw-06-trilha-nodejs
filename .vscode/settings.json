@@ -1,0 +1,12 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "NLW 6 - Trilha NodeJS",
+      "group": "localhost",
+      "database": "\\\\wsl$\\Ubuntu-20.04\\home\\fernando\\Development\\estudos\\nlw-06\\trilha-nodejs\\src\\db\\database.sqlite"
+    }
+  ],
+  "sqltools.useNodeRuntime": true
+}
