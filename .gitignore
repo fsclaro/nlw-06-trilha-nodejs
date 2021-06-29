@@ -118,3 +118,4 @@ dist
 .pnp.*
 
 database.sqlite
+.php_cs
