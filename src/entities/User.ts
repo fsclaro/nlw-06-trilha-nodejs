@@ -1,11 +1,11 @@
 import {Column, CreateDateColumn, Entity, PrimaryColumn, UpdateDateColumn} from "typeorm"
 import { v4 as uuid } from "uuid"
-
-@Entity("users")
+import { Exclude } from "class-transformer";
+@Entity('users')
 class User {
   constructor() {
     if (!this.id) {
-      this.id = uuid()
+      this.id = uuid();
     }
   }
 
@@ -21,9 +21,10 @@ class User {
   @Column()
   admin: boolean;
 
+  @Exclude()
   @Column()
   password: string;
-  
+
   @CreateDateColumn()
   created_at: Date;
 
